@@ -14,12 +14,12 @@ jobs:
       mvn clean package
     displayName: 'Maven Build'
 
-  # - script: |
-  #     cp ./webapp/target/*.war $(Build.ArtifactStagingDirectory)
-  #   displayName: 'Copy .war file'
+  - script: |
+      cp ./webapp/target/*.war $(Build.ArtifactStagingDirectory)
+    displayName: 'Copy .war file'
 
-  # - task: PublishPipelineArtifact@1
-  #   inputs:
-  #     targetPath: '$(Build.ArtifactStagingDirectory)'
-  #     artifact: 'drop'
-  #   displayName: 'Publish .war file'
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: '$(Build.ArtifactStagingDirectory)'
+      artifact: 'drop'
+    displayName: 'Publish .war file'
