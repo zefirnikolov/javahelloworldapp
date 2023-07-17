@@ -1,6 +1,7 @@
 trigger:
 - main
 
+# local runner:
 pool:
   name: Default
 
@@ -11,7 +12,7 @@ jobs:
   steps:
   - script: |
       export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-      mvn clean install
+      mvn clean package
     displayName: 'Maven Build'
 
   - script: |
