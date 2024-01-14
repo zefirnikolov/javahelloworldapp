@@ -1,3 +1,3 @@
-<h1> Johnnycash.com Learning</h1>
-<h2> Learn QA Automation tools + Devops Tools CI/CD pipelines in course from Scratch</h2>
-<h2> Good Luck and we are almost done with the course.Thank you</h2>
+<h1> Azure DevOps Live Demo</h1>
+<h2> Creating a Java Web Application.</h2>
+<h2> This is the main page.</h2>
